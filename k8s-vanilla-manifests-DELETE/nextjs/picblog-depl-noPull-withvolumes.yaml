@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: picblog-depl 
+spec:
+  replicas: 1
+  selector: 
+    matchLabels: 
+      app: picblog
+  template: 
+    metadata: 
+      labels:
+        app:  picblog
+        type: nextjs
+        tier: frontend
+    spec:
+      volumes: 
+        - name: picblog-storage
+          persistentVolumeClaim:
+            claimName: pic-pvc
+      containers:
+      - name: picblog
+        image: dpbsw/picblog:latest
+        env: 
+        - name: NODE_ENV
+          value: "development"
+        volumeMounts:
+          - name: picblog-storage
+            mountPath: /data
+        imagePullPolicy: Never
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: picblog-clusterip-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: picblog
+  ports:
+    - name: picblog
+      protocol: TCP
+      port: 3000
+      targetPort: 3000

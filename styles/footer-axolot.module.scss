@@ -1,0 +1,78 @@
+@import './settings.scss';
+
+.footerSectionsContainer {
+  width: 80%;
+  // margin: 0 auto;
+  padding: 0 2%;
+  display: flex; 
+  justify-content: center;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: 1024px) {
+    margin-top:  2rem;
+    padding-left: 5%;
+    width: 60rem;
+  } 
+
+}
+
+.footerAreaPositioning {
+  display: flex;
+  justify-content: center;
+}
+
+/* ***************************************************************** */
+/* Footer sections  */
+/* ***************************************************************** */
+.footerSection1 {        /* Read More section */
+  width: 16rem;
+  margin-right: 2rem;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    margin-bottom: 3.5rem;
+    height: 14rem;
+  } 
+}
+
+.footerSection2 {       /*  Useful Links section */
+  width: 20rem;
+}
+
+.footerSection3 {       /*  Useful Links section cont... */
+  width: 18rem;
+}
+
+.footerSection4 {      /*  Contact Info  section */
+  width: 18rem;
+
+  @media only screen  and (max-width: $ipad-max) {
+    margin-top:  2rem;
+  } 
+
+  @media only screen and (max-width: 1363px) {
+    margin-top:  2rem;
+  } 
+}
+
+
+/* ***************************************************************** */
+/* Copyright section  */
+/* ***************************************************************** */
+
+.copyrightItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;  
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    justify-content: center;
+    width: 70%;  
+    margin-top: -1rem;
+  } 
+}
+
+// .socialMediaIconsContainer {
+
+
+// }

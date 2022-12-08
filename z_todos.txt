@@ -1,0 +1,6 @@
+- Decide which template I will use for landing page
+- Copy resource/features page to pages directory and refactor imports
+- Once have resources page working rename index.js to index-js-DELETE
+- Set up pivitee project in github 
+
+

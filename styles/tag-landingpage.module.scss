@@ -1,0 +1,183 @@
+@import   './settings.scss';
+// ************************************************************
+// Tagging Landing Page Styles
+// ************************************************************
+
+// ----------------------------------------------------------
+// Benefits section 
+// ----------------------------------------------------------
+
+/* Entire Section container, which contains multiple rectangular pairs */
+.tagLpBenefitsContainer {
+  background-color: $greyshade0;
+  background-image: url(../public/images/abstract-lp-background-01.jpg);
+  object-fit: fill;
+  background-position: 100% 100%;
+  padding: .5%;
+
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    padding: .2%;
+  }
+}
+
+/* Section Title which displays the top of the entire section */
+.tagLpSectionTitle {
+  color: $greyshade5;
+  font-family: inherit;
+  font-size: $font-size-xlarge + .7rem; 
+  font-weight: 700;
+  text-align: center;
+  padding: 0 .5rem;
+  margin: 5rem 0rem;
+
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+      font-size: $font-size-medium;
+  }
+}
+
+
+
+/* a single rectangle container used for either the text block or image */
+.tagLpBenefitsRectangleContainer {
+  // border: 5px solid blue;
+	height: 25rem;  
+  width: 40%;
+  min-width: 400px;
+  padding: 4rem;
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    margin: 1.5% 0;
+  }
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    margin: 1.5% 0;
+  }
+
+}
+// min-width: 396px;
+/* container to hold 2 rectangles side by side  */
+.tagLpBenefitsRectanglePairContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  // border: 5px solid green;
+  padding: 1%;
+  margin: 5% 0;
+}
+
+/* This class is applied to container pairs where text is on the left. It Reverses the
+   image and text block so images show first when displayed on mobile device.  */
+.tagLpBenefitsRectanglePairContainerReverse {
+  @media screen and (min-width: $mobile-min) and (max-width: 815px) {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+/* title used in one of the benefit reactangle pairs */
+.tagLpBenefitTitle {
+  color: $black;
+  font-size: $font-size-xlarge + .5rem;
+  font-weight: 700;
+  padding-left: 1%;
+  padding-top: 2%;
+  line-height: 105%;
+  // text-align: left;
+}
+
+/* subtitle which appears below title used in one of the benefit reactangle pairs */
+.tagLpBenefitSubTitle {
+  color: $black;
+  font-size: $font-size-large - .1rem;
+  font-weight: 400;
+  line-height: 120%;
+  padding-left: 1%;
+  padding-top: 5%;
+  // text-align: left;
+  // vertical-align: middle;
+}
+
+// ----------------------------------------------------------
+// Key Technical Features Section 
+// ----------------------------------------------------------
+.process-box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;    
+  align-items: center;
+  justify-content: center;
+  margin: $s-size auto;
+  
+}
+
+// Styling for the process box itself
+.process-box {
+  border-radius: 25px;
+  background-color: $greyshade0;    
+  text-align: center;
+  height: 295px;
+  margin: $s-size;
+  width: 260px;
+  padding: .9% .7%;
+}
+
+// Styling for the process box elements
+.process-box__icon {
+  color: $orange3;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: $s-size;
+}
+
+.process-box__heading {
+  color: $greyshade5;
+  // color: $black;
+  font-size: $font-size-small + .2rem;
+  font-weight: 600;
+  margin-top: $s-size;
+}
+
+.process-box__victory-heading {
+  @extend .process-box__heading;
+  margin: .0rem 1.2rem -.2rem 1.2rem;
+}
+
+.process-box__victory-text {
+  color: $greyshade4;
+  font-size: $font-size-xxsmall;
+  width: 80%;
+  margin: $xs-size auto;
+  font-weight: 600;
+}
+
+.process-box__victory-icon { 
+  // color: $orange3;
+  color: red;
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-top: .7rem;
+}
+
+.process-box__text {
+  color: $greyshade4;
+  font-size: $font-size-xsmall;
+  width: 80%;
+  margin: $xs-size auto;
+  font-weight: 400;
+  // margin-top: $s-size;
+}
+
+.techSectionModifierMb1 {
+  margin-bottom: 5rem;
+}
+
+
+.tagLpBannerText {
+  color: $black;
+  font-size: $font-size-large - .1rem;
+  font-weight: 400;
+  line-height: 120%;
+  padding-left: 1%;
+  padding-top: 5%;
+  width: 75%;
+  // text-align: left;
+  // vertical-align: middle;
+}
