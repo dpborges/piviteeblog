@@ -22,7 +22,7 @@ const bottomPortion = () => (
   <div className={styles1.bottomPortion}>
     <div className={styles1.copyRightWrapper}>
       <p className={styles1.copyRightText}>
-        {`Pivitee Software © ${new Date().getFullYear()} All Rights Reserved.`}
+        {`Pivitee © ${new Date().getFullYear()} All Rights Reserved.`}
       </p>
     </div>
     <div className={styles1.contactLinkWrapper} >

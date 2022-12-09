@@ -31,7 +31,7 @@
   margin: 5rem 0rem;
 
   @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
-      font-size: $font-size-medium;
+      font-size: $font-size-xlarge;
   }
 }
 
@@ -61,13 +61,13 @@
   flex-wrap: wrap;
   // border: 5px solid green;
   padding: 1%;
-  margin: 5% 0;
+  margin: 5% 7%;
 }
 
 /* This class is applied to container pairs where text is on the left. It Reverses the
    image and text block so images show first when displayed on mobile device.  */
 .tagLpBenefitsRectanglePairContainerReverse {
-  @media screen and (min-width: $mobile-min) and (max-width: 815px) {
+  @media screen and (min-width: $mobile-min) and (max-width: 821px) {
     flex-wrap: wrap-reverse;
   }
 }
@@ -75,7 +75,7 @@
 /* title used in one of the benefit reactangle pairs */
 .tagLpBenefitTitle {
   color: $black;
-  font-size: $font-size-xlarge + .5rem;
+  font-size: $font-size-xlarge + .2rem;
   font-weight: 700;
   padding-left: 1%;
   padding-top: 2%;

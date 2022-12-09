@@ -1,8 +1,8 @@
 @import  './settings.scss';
 
-//-----------------------------------------------------------------
+//******************************************************************
 // Top Portion of the Footer
-//----------------------------------------------------------------- 
+//******************************************************************
 
 .topPortion {
   // margin-top: 8rem;
@@ -49,34 +49,38 @@
   }
 }
 
-//-----------------------------------------------------------------
+//******************************************************************
 // Bottom Portion of the Footer
-//----------------------------------------------------------------- 
+//******************************************************************
 
+// Container for bottom portion
 .bottomPortion {
   background-color: #17202A;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
   width: 100%;
-  height: 5rem;
-  padding: 0 15%;
+  height: 5.5rem;
+  padding: 1% 15%;
 
   @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
     flex-wrap: wrap;
     justify-content: center;
     height: 6rem;
+    padding: 0 15%
   }
 }
- 
+
+// 
 .contactLinkWrapper {
+  width: 100%;
 
   @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
     margin-bottom: .5rem;
   }
 }
-
 
 .contactLink {
   text-decoration: none;
@@ -92,14 +96,9 @@
   }
 }
 
-//-----------------------------------------------------------------
 // Copyright section 
-//-----------------------------------------------------------------
-
 .copyRightWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
     margin-top: .5rem;
   }
