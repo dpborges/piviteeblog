@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Link from 'next/link';
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import LinkButton1 from '../components/buttons/LinkButton1.js';
+import LinkButton1 from '../components/buttons/LinkButton1/index.js';
 import CaretRightIcon from "../components/icons/CaretRightIcon.js";
 import EnvelopeSquareIcon from "../components/icons/EnvelopeSquareIcon.js";
 import getAppConfig from '../config/AppConfig';

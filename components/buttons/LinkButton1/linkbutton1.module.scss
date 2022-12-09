@@ -1,4 +1,4 @@
-/* create container  - */
+@import   '../../../styles/settings.scss';/* create container  - */
 // .forLinkButton1Container {  /* removed this class; as component was not displaying 
 //   overflow: hidden;            when enabled */
 //   position: relative;
@@ -8,10 +8,11 @@
 .forLinkButton1 {
   border-radius: 8px;
   color: white;
-  background-color: #2980B7;
+  background-color: $blueGreen;
+  // background-color: #2980B7;
   text-decoration: none;
   font-family: Roboto, sans-serif;
-  font-size: 15px;
+  font-size: 1.6rem;
   // border: 1px solid #2980B7;
   padding: 10px 30px;
   position: absolute;
@@ -20,7 +21,8 @@
   transition: all 0.3s;
 
   &:hover {
-    background-color: #2471a2;
+    // background-color: #2471a2;
+    background-color: $blueGreen;
     color: white;
     // border: 1px solid #2471a2;
   }

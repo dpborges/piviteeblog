@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import LinkButton1 from '../components/buttons/LinkButton1/index.js'
 // import Script from 'next/script'
 import { GAinit, GAlogPageView } from '../common/GoogleAnalytics';
 // import SSPageHeader from '../common/SSPageHeader.js'
@@ -15,6 +16,7 @@ import { faSmile } from '@fortawesome/pro-light-svg-icons';
 import { faCloud, faDatabase, faEthernet, faEye, faTags } from '@fortawesome/pro-regular-svg-icons';
 import getAppConfigParm  from '../config/AppConfig';
 import Footer from '../common/Footer-Axolot.js'
+import PvtFooter from '../common/PvtFooter.js';
 import VictoryIcon  from '../components/icons/VictoryIcon.js';
 // import BannerSection from '../../components/formatting/BannerSection';
 
@@ -312,18 +314,18 @@ const featuresListSection = () => (
 
 /* This section provides list of application features */
 const ctaBlock = () => (
-    <div className={styles1["features-ctablock-container"]}>
-      <h3 className={styles1.featuresSectionCtaTitle}>Interested?</h3>
+    <div className={styles0["tagLpBannerContainer"]}>
+      <h3 className={styles0.tagBannerCtaTitle}>Progress Updates</h3>
       <div className={styles0.tagLpBannerText}>
        The Tagging Solution is currently a work in progress. If interested 
-       in a cost effective tagging solution for your application, we can 
-       notify you when its available. Just let us let us know your 
-       requirements and contact info.
+       in a cost effective tagging solution for your application, feel free
+       to drop us a note and we'll notify you about future updates. 
       </div>
       <div style={{display: 'flex', justifyContent: 'center', marginTop: '2rem'}}>
-        <a href={getAppConfigParm("siteUrl")} className={styles3["cta-button"]}>
+        {/*<a href={getAppConfigParm("siteUrl")} className={styles3["cta-button"]}>
           <p className={styles3["cta-button-text"]}>Get Started Now</p>
-        </a>
+       </a>*/}
+        <LinkButton1 link={`${getAppConfigParm("siteUrl")}/resources/about-us`} linkText="I'm interested" />
       </div>
     </div>
 );
@@ -362,7 +364,8 @@ class FeaturesPage extends Component {  // use destructing to obtain function pr
             {/*nonfuncFeatureSection()*/}
             {/*featuresListSection()*/}
             {ctaBlock()}
-            <Footer style={{backgroundColor: 'grey'}} />
+            {/*<Footer style={{backgroundColor: 'grey'}} /> */}
+            <PvtFooter /> 
           </div>
         )
     }

@@ -1,0 +1,124 @@
+@import  './settings.scss';
+
+//-----------------------------------------------------------------
+// Top Portion of the Footer
+//----------------------------------------------------------------- 
+
+.topPortion {
+  // margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  background-color: #1C2833 ;
+  justify-content: center;
+  width: 100%;
+  height: 6rem;
+  padding: 0;
+  margin-top: 14rem;
+}
+
+.logoAndTextWrapper {
+  display: flex;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 40px;
+  margin-right: .5rem;
+  margin-top: -.4rem;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+      height: auto;
+      width: 35px;
+      margin-left: 0rem;
+      margin-top: -.5rem;
+  }  
+}
+
+.piviteeText {
+  // border: 2px solid red;
+  color: $white;
+  font-weight: 700;
+  font-family: "Lato", "Roboto", sans-serif;
+  font-size: $font-size-medium;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    font-size: $font-size-small;
+    margin-top: -.2rem
+  }
+}
+
+//-----------------------------------------------------------------
+// Bottom Portion of the Footer
+//----------------------------------------------------------------- 
+
+.bottomPortion {
+  background-color: #17202A;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 0 15%;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 6rem;
+  }
+}
+ 
+.contactLinkWrapper {
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    margin-bottom: .5rem;
+  }
+}
+
+
+.contactLink {
+  text-decoration: none;
+  color: $offWhite;
+  transition: color .5s;
+
+  &:hover  {
+    color: $blueGreen;
+  }
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    margin-top: .5rem;
+  }
+}
+
+//-----------------------------------------------------------------
+// Copyright section 
+//-----------------------------------------------------------------
+
+.copyRightWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    margin-top: .5rem;
+  }
+}
+
+.copyRightText {
+  color: $offWhite;
+}
+
+.copyrightItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;  
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    justify-content: center;
+    width: 70%;  
+    margin-top: -1rem;
+  } 
+}
