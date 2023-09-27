@@ -15,6 +15,7 @@ import getAppConfigParm  from '../../config/AppConfig';
 import Footer from '../../common/Footer-Axolot.js'
 import VictoryIcon  from '../../components/icons/VictoryIcon.js';
 // import BannerSection from '../../components/formatting/BannerSection';
+// import Header  from '../../common/Header';
 
 import styles1 from "../../styles/features.module.scss";
 import styles2 from "../../styles/homepage-sections.module.scss";
@@ -249,6 +250,7 @@ class FeaturesPage extends Component {  // use destructing to obtain function pr
                 {/* <script type="text/javascript" src="/static/modernizr.js"></script> */}
             </Head>
             <SSPageHeader />
+            {/* <Header /> */}
             {titleSection()}
             {processSection()}
             {nonfuncFeatureSection()}

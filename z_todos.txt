@@ -1,6 +1,48 @@
-- Decide which template I will use for landing page
-- Copy resource/features page to pages directory and refactor imports
-- Once have resources page working rename index.js to index-js-DELETE
-- Set up pivitee project in github 
+- (DONE) Decide which template I will use for landing page
+- (DONE) Copy resource/features page to pages directory and refactor imports
+- (DONE) Once have resources page working rename index.js to index-js-DELETE
+- (DONE) Set up pivitee project in github 
+- (DONE) Clean up landing page so there are no CSS references to PitchInClub or Axolot Styles
+- (DONE) - Comment out The resources link
+- (NOT STARTED) - Implement FeedBack / Contact form Service
+    Implement the simple ability to capture the form data, but implementation should 
+    represent transition architecture to target state.
+  - (DONE) Conduct initial Analysis and Design Phase 
+- Build UI Webform using JSON Schema
+  - Create a simple Hello World PReact/Webcomponent and Verify that it works on 
+    a basic HTML page, works on react, and works on Nextjs.
+  - Build a Basic subscription form in Preact, register it as a webcomponent, and test it.
+  - Create the same form using Jsonforms. Use following resources to assist 
+     React Example: https://betterprogramming.pub/why-you-should-start-adopting-json-schema-forms-in-your-next-project-547dbcbc800a
+     Official documentation here => https://jsonforms.io/
+     Youtube video: https://www.youtube.com/watch?v=e-KB2Xlz40c
+  - Go through z_ms-framework.txt doc to finalize microservice architecture to use
+    going forward.
+  - Create Conceptual Architecure.
+- Implement Server Side Framework located in file z_ms-framework.txt
+  - Create Project using my previous Nats Implementation and 
+    NestJs Event Driven Architecture Project template created from ms-framework
+    reviews and research.
+  - Create command handlers to handle following
+    - Implement Form Repository for Notification form
+    - Implement Form Template Repository
+  - Create event handlers to handle  
+   - email notifications
+- Implement Client Side for Implementation
+  - Step 1 TBD 
+  - Step 2 TBD 
+  - etc
+ 
+START LOOKING AT BUILDING OUT CONTENT API
+- First step is to Read S3 docs and make notes regarding design and implementation
+  - Getting started 
+  - Tutorials
+  - Working with Buckets  
+  - Working with objects
+  - Security Best Practices
+  - Mangaging Storage
+  - Developing with Amazon S3
 
+NEXT -> GOTO CONTENT API PROJECT AND CONTINUE FROM THE TODOS FOUND THERE
+        
 

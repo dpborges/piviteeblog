@@ -1,7 +1,88 @@
 @import   './settings.scss';
+
 // ************************************************************
 // Tagging Landing Page Styles
 // ************************************************************
+
+// ----------------------------------------------------------
+// Top of Page Title Section
+// ----------------------------------------------------------
+.tagLpTitleContainer {
+  background-image: url(../public/images/grey-dotted-network.jpg);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 75vh;; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;      /* these 4 elements are used together */ 
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+      margin-top: -.1rem; /* You must set a specified height */
+  }
+}
+
+.tagLpTextBlock2 {
+  font-family: $font-family;
+  margin-left: 20%;
+  margin-top: 10%;
+  text-align: left;
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    // font-size: $font-size-medium;
+    margin-left: 10%;
+    margin-top: 10%;
+    // width: 100%;
+  }
+}
+
+/* Horizontal rule that serves as an underscore by assuming same width as text above it,
+   in this case the title */
+.tagLpTitleHr {
+  display: inline-block;
+}
+.tagLpTitleHr:after {
+  content: '';
+  display: block;
+  border-top: 5px solid $orange;
+  margin-top: 0.5em;
+}
+
+/* This is main title within the text block container */
+.tagLpTitle {
+  color: $dark-grey;
+  font-size: $font-size-xxlarge + 1rem;
+  font-weight: 700; 
+
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    font-size: $font-size-xlarge;
+    margin-bottom: .3rem;
+  }
+}
+
+.tagLpSubtitle {
+  color: $greyshade5;
+  font-size: $font-size-xxlarge;
+  font-weight: 400;
+  margin-top: 3rem;
+  width: 65%;
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    font-size: $font-size-xxlarge - .75rem;
+    margin-top: 1.2rem;
+  }
+  
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
+    font-size: $font-size-medium;
+    line-height: 2.5rem;
+    margin-top: 1.2rem;
+    width: 90%;
+  }
+}
 
 // ----------------------------------------------------------
 // Benefits section 
@@ -51,8 +132,8 @@
   @media screen and (min-width: $mobile-min) and (max-width: $mobile-max) {
     margin: 1.5% 0;
   }
-
 }
+
 // min-width: 396px;
 /* container to hold 2 rectangles side by side  */
 .tagLpBenefitsRectanglePairContainer {
@@ -105,7 +186,6 @@
   align-items: center;
   justify-content: center;
   margin: $s-size auto;
-  
 }
 
 // Styling for the process box itself
@@ -207,4 +287,13 @@
   width: 75%;
   text-align: center;
   // vertical-align: middle;
+}
+
+
+// ----------------------------------------------------------
+// Modifiers
+// ----------------------------------------------------------
+
+.tagLpHorizSpacer1 {
+  margin-top: 1rem;
 }

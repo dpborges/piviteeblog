@@ -19,6 +19,7 @@ const textNavElements = (siteUrl, resources, blogUrl, toggleSelected  ) => {
               <div className={styles.linktextSize}>HOME</div>
           </a>
       </li>
+      {/*
       <li className={styles.topNavLinkAlt} key="u12">
           <div className={styles.dropdownContainer}>
               <DropDownMenu title="RESOURCES" list={resources} 
@@ -26,6 +27,7 @@ const textNavElements = (siteUrl, resources, blogUrl, toggleSelected  ) => {
               />
           </div>
       </li>
+    */}
       <li className={styles.topNavLink} key="u13">
           <a href={`${blogUrl}`} className={styles.pageHeaderNavlink}>
               <div className={styles.linktextSize}>BLOG</div>

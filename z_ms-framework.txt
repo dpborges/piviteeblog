@@ -1,0 +1,30 @@
+//***************************************************
+// Define Conceptual Architectue for Initial State
+//***************************************************
+Answer following Questions
+  Is Command API and Query Api separate microservices?
+  Do I wrap the Billing Service in a Microservice
+     or call it directly.
+RXJS -
+- Review my RXJS documentation as a review before getting into 
+  next steps
+CQRS / SAGA
+- Clone CQRS Project on NestJS Web site
+   - View video and make comments https://www.youtube.com/watch?v=c8hvW14VdkY&t=90s
+         starting at about 10 minutes into video
+   - Read the Overview / make comments on the project I cloned
+- Create sequence diagram to understand the flow
+- Clone project provide by Michael Guay 2 videos on Domain Driven Design
+- Go thru the videos
+- Create Sequence Diagram to understand flow and determine how
+    SAGA would fit in.
+MICROSERVICES
+- Review Microservice Youtube video from Michael Guay
+  - Update System Architecture to capture understanding
+    and reflect any changes.
+  - Write the steps I need to do to create a Microservice
+- Review Udemy Microservice course by Stephen Gridher
+  Sections 8-12
+  - Update System Architecture to capture understanding
+    and reflect any changes.
+  - Write the steps I need to do to create a Microservice
